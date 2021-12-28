@@ -8,10 +8,10 @@ export default function Header({ currentPage, handlePageChange }) {
         <div>Cornelius Smith</div>
         <Navigation
           currentPage={currentPage}
-          hadlePageChange={handlePageChange}
+          handlePageChange={handlePageChange}
         />
       </header>
-      <div class="banner">
+      <div className="banner">
         <img
           src={require("./images/background.jpg")}
           alt="tech background"

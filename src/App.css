@@ -67,7 +67,7 @@ h2 {
   font-weight: bold;
 }
 
-#aboutme {
+.aboutme {
   flex: 1 0 75%;
   padding: 10px;
   text-indent: 50px;

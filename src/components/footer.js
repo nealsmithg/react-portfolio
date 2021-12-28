@@ -9,7 +9,7 @@ export default function Footer() {
       </h1>
       <footer id="contact">
         <div className="foot">919-357-0993</div>
-        <a href="https://github.com/nealsmithg" class="foot">
+        <a href="https://github.com/nealsmithg" className="foot">
           Github
         </a>
         <a className="foot" href="mailto: nealsmithg@gmail.com">

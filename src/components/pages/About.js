@@ -7,7 +7,7 @@ export default function About() {
         <p>About</p>
         <p>Me</p>
       </h1>
-      <p id="aboutme">
+      <p className="aboutme">
         I am currently back at school working on my Professional Certificate
         from UNC-Chapel Hill in their coding bootcamp. I am seeking my passion
         in coding and trying to find my next career path. I have been interested
