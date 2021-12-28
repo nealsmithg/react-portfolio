@@ -1,16 +1,14 @@
-import React, { useState } from "react";
+import React from "react";
 import Navigation from "./Navigation";
 
-export default function Header() {
-  const [page, setPage] = useState(["about"]);
-
-  const handleSetPage = () => {
-    setPage();
-  };
+export default function Header({ currentPage, handlePageChange }) {
   return (
     <header>
       <div>Cornelius Smith</div>
-      <Navigation page={page} handleSetPage={handleSetPage} />
+      <Navigation
+        currentPage={currentPage}
+        hadlePageChange={handlePageChange}
+      />
     </header>
   );
 }
