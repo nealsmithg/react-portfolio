@@ -1,0 +1,188 @@
+:root {
+  --blue: rgb(101, 101, 255);
+  --lightblue: rgb(131, 131, 255);
+}
+
+header {
+  background-color: var(--blue);
+  height: 50px;
+  border-bottom: 5px solid var(--lightblue);
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+header div {
+  font-size: 55px;
+  font-family: "Brush Script MT";
+  display: inline;
+  flex: 6 0 auto;
+}
+
+.nav {
+  background-color: #fcb932;
+  margin: 5px;
+  color: white;
+  text-decoration: none;
+  border: black solid;
+  font-size: 35px;
+}
+
+.banner {
+  position: relative;
+}
+
+.tech-pic {
+  object-fit: contain;
+  height: 100%;
+  width: 100%;
+}
+
+.profile-pic {
+  position: absolute;
+  border-radius: 100%;
+  object-fit: cover;
+  height: 50%;
+  right: 5%;
+  bottom: 25%;
+}
+main {
+  background-color: rgb(209, 209, 252);
+  display: flex;
+  flex-flow: row wrap;
+}
+
+main h1 {
+  flex: 1 0 20%;
+  border-right: 2px solid black;
+  text-align: right;
+  padding: 10px;
+  font-size: 35px;
+  font-weight: bold;
+  margin: 3px 0;
+}
+
+h2 {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+#aboutme {
+  flex: 1 0 75%;
+  padding: 10px;
+  text-indent: 50px;
+}
+
+.group_project {
+  flex: 1 0 75%;
+  padding: 10px;
+  text-indent: 50px;
+}
+
+#work {
+  flex: 1 0 75%;
+  padding: 10px;
+  height: auto;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+}
+
+.card {
+  position: relative;
+  text-align: center;
+  border: 5px solid var(--blue);
+  margin: 5px;
+}
+
+.card-title {
+  position: absolute;
+  background-color: var(--blue);
+  bottom: 30px;
+}
+
+/* .code {
+    height: 200px;
+    width: 670px;s
+    object-fit: cover;
+  } */
+
+.card-picture {
+  height: 150px;
+  width: 400px;
+  object-fit: cover;
+}
+
+#contact {
+  flex: 1 0 75%;
+  padding: 10px;
+  text-indent: 50px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  padding: 10px;
+}
+
+.foot {
+  color: black;
+  margin: 5px;
+  text-decoration: none;
+  text-decoration: underline;
+  text-decoration-color: var(--blue);
+  font-size: 35px;
+  flex: 1 0 45%;
+}
+
+@media screen and (max-width: 768px) {
+  body {
+    width: 100%;
+  }
+
+  header {
+    flex-direction: colemn;
+    flex-wrap: wrap;
+    height: auto;
+  }
+
+  header div {
+    width: 100%;
+  }
+
+  .nav {
+    width: 100%;
+  }
+
+  main {
+    flex-direction: column;
+  }
+
+  main h1 {
+    border-right: none;
+    border-bottom: 2px solid black;
+    text-align: left;
+    width: calc(100% - 20px);
+  }
+
+  #work {
+    width: calc(100% - 20px);
+  }
+
+  .card-picture {
+    width: calc(100vw - 20px);
+  }
+
+  #aboutme {
+    flex: 1 1 100%;
+    width: calc(100% - 20px);
+  }
+
+  #contact {
+    flex-direction: column;
+    width: calc(100% - 20px);
+    text-indent: 0px;
+  }
+
+  .foot {
+    font-size: 20px;
+  }
+}
