@@ -7,7 +7,7 @@ export default function PortfolioContainer() {
 
   const renderPage = () => {
     if (currentPage === "About") {
-      return <About />;
+      //   return <About />;
     }
   };
 
@@ -16,8 +16,10 @@ export default function PortfolioContainer() {
   return (
     <>
       <Header currentPage={currentPage} hadlePageChange={handlePageChange} />
-      {renderPage()}
-      <Footer />
+      <main>
+        {renderPage()}
+        <Footer />
+      </main>
     </>
   );
 }
