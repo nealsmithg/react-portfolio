@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import Navigation from "./Navigation";
 
-function Header() {
+export default function Header() {
   const [page, setPage] = useState(["about"]);
 
   const handleSetPage = () => {
@@ -14,5 +14,3 @@ function Header() {
     </header>
   );
 }
-
-export default Header;
