@@ -1,15 +1,27 @@
-import React, { useState } from "react";
+import React from "react";
 
-export default function Navigation({ page, handleSetPage }) {
+export default function Navigation({ currentPage, handlePageChange }) {
   return (
     <>
-      <a href="#aboutme" class="nav">
+      <a
+        href="#aboutme"
+        className={currentPage === "About" ? "nav active" : "nav"}
+        onClick={() => handlePageChange("About")}
+      >
         About Me
       </a>
-      <a href="#work" class="nav">
+      <a
+        href="#work"
+        className={currentPage === "Work" ? "nav active" : "nav"}
+        onClick={() => handlePageChange("Work")}
+      >
         Work
       </a>
-      <a href="#contact" class="nav">
+      <a
+        href="#contact"
+        className={currentPage === "Contact" ? "nav active" : "nav"}
+        onClick={() => handlePageChange("Contact")}
+      >
         Contact
       </a>
     </>
