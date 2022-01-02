@@ -24,6 +24,13 @@ export default function Navigation({ currentPage, handlePageChange }) {
       >
         Contact
       </a>
+      <a
+        href="#resume"
+        onClick={() => handlePageChange("Resume")}
+        className={currentPage === "Resume" ? "nav active" : "nav"}
+      >
+        Resume
+      </a>
     </>
   );
 }
