@@ -45,6 +45,11 @@ export default function Work() {
             GitHub
           </a>
         </h2>
+        <img
+          src={require("../images/final_webpage_group_project.png")}
+          alt="Astronomical Guidance Project"
+          class="card-picture"
+        />
       </div>
       <h1>
         <p>Flipped</p>
@@ -90,6 +95,11 @@ export default function Work() {
             GitHub
           </a>
         </h2>
+        <img
+          src={require("../images/flipped_pages_landing.png")}
+          alt="Astronomical Guidance Project"
+          class="card-picture"
+        />
       </div>
     </>
   );
