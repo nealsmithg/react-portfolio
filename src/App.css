@@ -92,6 +92,11 @@ h2 {
   justify-content: space-around;
 }
 
+.resume-points {
+  flex: 1 0 75%;
+  padding: 10px;
+}
+
 .card {
   position: relative;
   text-align: center;

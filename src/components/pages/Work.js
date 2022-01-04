@@ -48,7 +48,7 @@ export default function Work() {
         <img
           src={require("../images/final_webpage_group_project.png")}
           alt="Astronomical Guidance Project"
-          class="card-picture"
+          className="card-picture"
         />
       </div>
       <h1>
@@ -98,7 +98,7 @@ export default function Work() {
         <img
           src={require("../images/flipped_pages_landing.png")}
           alt="Astronomical Guidance Project"
-          class="card-picture"
+          className="card-picture"
         />
       </div>
     </>
